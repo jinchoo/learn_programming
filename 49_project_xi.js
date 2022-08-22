@@ -23,6 +23,11 @@ function addGrade(grades, grade) {
   return grades
 }
 
+function addGrade(grades, grade) {
+  grades.push(grade)
+  return grades
+}
+
 // 2. the number of tests take is shown.
 function getNumberOfGrades(grades) {
   return grades.length

@@ -19,6 +19,18 @@ numbers.includes(3) // false
 
 // the numbers.includes(3) returned false because there is no item in the numbers array that is 3.
 
+// array.includes(item) allwos you to check whether the item exists inside the array.
+// array.includes(item) returns a boolean.
+// array.includes(item) returns true when the item is found insde the array.
+// array.includes(item)return false when the item is NOT found inside the array.
+
+function isTestTooEasy(grades) {
+  return grades.includes(20)
+}
+
+console.log(isTestTooEasy([10, 15, 13, 19])) // should return false
+console.log(isTestTooEasy([7, 13, 20, 15])) // should return true
+
 //============================================================
 
 // Array join
