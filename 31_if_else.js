@@ -38,3 +38,20 @@ getVotingMessage(10) // 'You are not allowed to vote'
 
 // As always, its important to remmeber the return keyword, even inside the else.
 // If you forget about it, it will return undefined instead.
+
+function isPasswordVaoid(password) {
+  if (password.length >= 10) {
+    return true
+  } else {
+    return false
+  }
+}
+
+//The password is considered valid when it is least 10 characgers long, however, leading and trailing spaces should NOT be counted.
+function isPasswordValid(password) {
+  if (password.trim().length >= 10) {
+    return true
+  } else {
+    return false
+  }
+}
