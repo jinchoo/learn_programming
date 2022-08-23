@@ -93,7 +93,7 @@ let sum3 = 0
 // grade3 is NOT defined here
 grades3.forEach(function (grade3) {
   // grade is defined here
-  summ3 = sum3 + grade3
+  sum3 = sum3 + grade3
   // grade is defined here
 })
 // grade is NOT defined here
@@ -146,7 +146,7 @@ function calculateSum(items) {
 
 calculateSum([10, 20, 30]) // 60
 calculateSum([5, 2]) // 7
-calulateSum([]) // 0
+calculateSum([]) // 0
 
 // Notice how we are able to reuse our logic with any array of numbers and we'll get back the sum.
 
@@ -160,7 +160,7 @@ calulateSum([]) // 0
 
 function calculateTotal(numbers) {
   let sum = 0
-  numbers.forEAch(function (number) {
+  numbers.forEach(function (number) {
     sum = sum + number
   })
   return sum
@@ -186,6 +186,7 @@ function getSumOfGrades(grades) {
   grades.forEach(function (grade) {
     sum = sum + grade
   })
+  console.log('🚀 ~ file: 55_calculating_the_sum.js ~ line 189 ~ grade', grade)
   return sum
 }
 
@@ -198,6 +199,10 @@ function getAverageGrade(grades) {
 }
 
 function sumNonFreezingTemperatures(temperatures) {
+  console.log(
+    '🚀 ~ file: 55_calculating_the_sum.js ~ line 202 ~ sumNonFreezingTemperatures ~ temperatures',
+    temperatures,
+  )
   let sum = 0
   temperatures.forEach(function (temperature) {
     if (temperature >= 0) {
