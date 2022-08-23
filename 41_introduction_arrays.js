@@ -19,6 +19,6 @@ let grades1 = [10, 15, 13, 10, 18]
 
 //===========================================================================================================================
 
-// An array is a list of vlues
+// An array is a list of values
 // You can think of arrays as a row in an excel sheet.
 // The items inside the array are called the elements of the array.
