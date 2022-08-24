@@ -51,3 +51,29 @@ function getRaisedGrades(grades) {
     return grade + 2
   })
 }
+
+let strings = ['abc', 'def', 'ghi', 'jkl']
+
+let chars = strings.map(function (string) {
+  return string[0]
+})
+
+console.log(chars) // ['a', 'd', 'g', 'j']
+
+// This works because we take every array item and return the first character (retrun string[0])
+
+function getInitials(names) {
+  return names.map(function (name) {
+    return name[0]
+  })
+}
+
+console.log(getInitials(['John', 'Paul', 'George', 'Ringo'])) // ['J', 'P', 'G', 'R']
+
+function getLastNameChar(names) {
+  return names.map(function (name) {
+    return name[name.length - 1]
+  })
+}
+
+console.log(getLastNameChar(['John', 'Paul', 'George', 'Ringo'])) // ['n', 'l', 'e', 'o']
